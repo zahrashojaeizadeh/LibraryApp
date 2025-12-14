@@ -1,0 +1,90 @@
+$color-shadow:#a88299;
+$color-background:#fff;
+$color-background-form:#fdf2f7;
+$color:#333;
+$border-color:#d14a9c;
+$color-message:#e74c3c;
+$background-color-button: #f7a6c1;
+$box-shadow-input:rgba(209,74,156,0.4);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    background: $color-background;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px $color-shadow;
+    font-family: Arial, sans-serif;
+    direction: rtl;                
+}
+.form-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    color: $color;
+    text-align: right;
+}
+input.form-control {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: $color-background-form;
+    transition: all 0.3s ease;
+    display: block;
+}
+input.form-control:focus {
+    border-color: $border-color;
+    background-color: $color-background;
+    box-shadow: 0 0 12px $box-shadow-input;
+    outline: none;
+}
+button.btn-primary.btn-small {
+    width: 90%;
+    padding: 14px;
+    font-size: 16px;
+    display: block;
+    margin: 25px auto 0;
+    background-color:$border-color;
+    color: $color-background;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button.btn-primary.btn-small:hover {
+    background-color: $background-color-button;
+    transform: scale(1.05);
+}
+.message {
+    color: $color-message;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.remember {
+  margin-top: 5px;  
+  display: flex;
+  align-items: center;
+  gap: 6px;           
+  direction: rtl;      
+}
+.remember input[type="checkbox"] {
+  margin: 0;
+}
