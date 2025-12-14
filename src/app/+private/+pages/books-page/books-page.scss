@@ -1,18 +1,16 @@
 $primary-color: rgba(199, 168, 207, 0.863);
 $secondary-color: gray;
-$row-color-odd: rgba(97, 97, 124, 0.1);   // بنفش کم‌رنگ
-$row-color-even: rgba(255, 200, 200, 0.1);  // صورتی کم‌رنگ
-$row-hover: rgba(200, 200, 255, 0.2);       // hover ملایم
+$row-color-odd: rgba(97, 97, 124, 0.1);  
+$row-color-even: rgba(255, 200, 200, 0.1);  
+$row-hover: rgba(200, 200, 255, 0.2);      
 $text-color: white;
 $btn-padding: 0.3em 0.6em;
 $btn-radius: 0.3em;
-
 table {
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
   th {
     background-color: #ac92a9;
     color: $text-color;
@@ -21,18 +19,15 @@ table {
     font-weight: 600;
     letter-spacing: 0.5px;
   }
-
   td {
     text-align: center;
     padding: 0.5em 0.8em;
     vertical-align: middle;
-
     &:first-child {
       font-weight: 700;       // بولد برای شناسه
       color: #333;            // تیره‌تر
     }
   }
-
   tr {
     &:nth-child(odd) {
       background-color: $row-color-odd;
@@ -45,12 +40,10 @@ table {
       transition: background-color 0.3s ease;
     }
   }
-
   td:last-child {
     text-align: left;
   }
 }
-
 button {
   background-color: $primary-color;
   color: $text-color;
@@ -63,14 +56,12 @@ button {
   letter-spacing: 0.5px;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
   &:hover {
     background-color: #b98fb4;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     opacity: 1;
   }
-
   &:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(128, 85, 124, 0.5);

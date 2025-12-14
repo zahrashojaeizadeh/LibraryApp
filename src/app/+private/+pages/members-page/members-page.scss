@@ -1,4 +1,4 @@
-  $primary-color: #b9a6b7;
+$primary-color: #b9a6b7;
 $secondary-color: gray;
 $row-color-odd:  rgba(119, 97, 124, 0.1);  
 $row-color-even: rgba(248, 188, 188, 0.1);  
@@ -9,7 +9,6 @@ table {
   border-collapse: collapse;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 th {
   background-color: $primary-color;
   color: white;
@@ -17,35 +16,28 @@ th {
   text-align: center;
   font-weight: 600;
 }
-
 td {
   text-align: center;
   padding: 0.3em 0.5em;
   vertical-align: middle;
 }
-
 td:first-child {
   font-weight: 700;
   color: 3;
 }
-
 tr:nth-of-type(odd) {
   background-color: $row-color-odd;
 }
-
 tr:nth-of-type(even) {
   background-color: $row-color-even; 
 }
-
 tr:hover {
   background-color: rgba(200, 200, 255, 0.2);
   transition: background-color 0.3s ease;
 }
-
 td:last-child {
   text-align: left;
 }
-
 button {
   background-color: rgba(158, 105, 138, 0.877);
   color: white;
@@ -58,13 +50,11 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-
 button:hover {
   background-color: #b98fb4;
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
-
 button:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(243, 188, 238, 0.3);

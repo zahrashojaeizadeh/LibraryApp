@@ -18,9 +18,9 @@ export class LoginPage {
   message:string='';
   check(){
     if(this.loginForm.username=='admin' && this.loginForm.password=='admin'){
-      sessionStorage.setItem('token','f$$rf65jyhh');
+      sessionStorage.setItem('token','zahraaaa');
       if (this.loginForm.keepMe==true) {
-        localStorage.setItem('token','f$$rf65jyhh');
+        localStorage.setItem('token','zahraaaa');
       }
       this.router.navigateByUrl('/private');
     }
